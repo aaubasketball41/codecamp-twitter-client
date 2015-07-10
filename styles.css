@@ -1,0 +1,47 @@
+                h1 {
+                    text-align: center;
+                    font-size: 250%;
+                }
+                form {
+                    text-align:center;
+                }
+                textarea {
+                   
+                    background-color: rgb(230,230,230);
+                    font-size: 16px;
+                }
+                button {
+                   width: 200px;
+                   height: 100px;
+                   ;
+                }
+                
+                .results {
+                    border-style: solid;
+                    font-size: 20px;
+                    text-align: center;
+                    border-width: 5px;
+                    width: 500px;
+                    border-color: rgb(230,230,230);
+                    margin: 5px auto 5px auto;
+                }
+                .two {
+                    font-size: 24px;
+                }
+                .thanks {
+                    text-align:center;
+                    font-size: 36px;
+                }
+                
+                .titles {
+                    text-align: left;
+                    padding: 10px;
+                }
+                .databaseresults {
+                    text-align:left;
+                    padding: 10px;
+                }
+                .deletebutton {
+                    height:20px;
+                    
+                }
