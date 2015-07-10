@@ -6,8 +6,6 @@
     
     <head>
         <link href="http://dylanlane.koding.io:8888/styles.css" type="text/css" rel="stylesheet" />
-        
-        
     </head>
     
     <body background="https://abs.twimg.com/a/1435205969/img/t1/lohp_streams_header_bg_v4.png">
@@ -33,7 +31,7 @@
         <cfif structKeyExists(FORM,'tweet_me')>
         
             <p class="thanks">
-                Thanks for Tweeting!!
+                Thanks for Tweeting!
             </p>
                     
         <cfquery datasource="the-db">
@@ -62,17 +60,17 @@
         <br>
         
         <cfoutput>
-                <cfloop query='MyTweets'>
-                    <div class="results">
-                        <p class="one">
-                                <i>#MyTweets.tweet_user#'s thoughts at #TIMEFORMAT(tweet_date, "h:mm tt")# on #DATEFORMAT(tweet_date, "m/d")#...</i>
-                        </p>    
-                            
-                        <p class="two">
-                                #MyTweets.tweet_message#
-                        </p>
-                    </div>
-                </cfloop>
+            <cfloop query='MyTweets'>
+                <div class="results">
+                    <p class="one">
+                            <i>#MyTweets.tweet_user#'s thoughts at #TIMEFORMAT(tweet_date, "h:mm tt")# on #DATEFORMAT(tweet_date, "m/d")#...</i>
+                    </p>    
+                        
+                    <p class="two">
+                            #MyTweets.tweet_message#
+                    </p>
+                </div>
+            </cfloop>
         </cfoutput>
         
         </cfif>
